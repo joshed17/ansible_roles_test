@@ -1,0 +1,10 @@
+---
+- name: create user
+  hosts: all
+
+  roles:
+    - role: test
+
+  post_tasks:
+    - name: validate if user exists
+      shell: cat /etc/passwd

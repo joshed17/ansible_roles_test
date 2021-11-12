@@ -1,0 +1,5 @@
+---
+# tasks file for motd
+- name: copy motd file
+  user:
+    name: "{{user_name}}"  
